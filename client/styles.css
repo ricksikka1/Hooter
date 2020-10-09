@@ -10,3 +10,26 @@
 .loading{
     text-align: center;
 }
+
+.hoots {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+.hoots > div {
+    background: hsl(0, 0%, 95%);
+    padding: 12px;
+    border-radius: 4px;
+}
+  
+.hoots > div > h3 {
+    word-wrap: break-word;
+}
+  
+.hoots > div > p {
+    word-wrap: break-word;
+}
+  
+.hoots > div:not(:last-child) {
+    margin-bottom: 8px;
+}

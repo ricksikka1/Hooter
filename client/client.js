@@ -32,29 +32,38 @@ form.addEventListener('submit', (event) => {
     }).then(response => response.json())
       .then(createdHoot => {
         form.reset();
-        loadingElement.style.display = 'none';
         form.style.display = '';
+        loadingElement.style.display = '';
+        listAllHoots();    
       });
     
 });
 
 function listAllHoots(){
+    hootsElement.innerHTML='';
     fetch(API_URL)
         .then(response => response.json())
         .then(hoots => {
+            hoots.reverse();
+            console.log(hoots);
             hoots.forEach(hoot => {
                 const div = document.createElement('div');
 
                 const header = document.createElement('h3');
                 header.textContent = hoot.name;
 
-                const content = document.createElement('p');
-                content = hoot.content;
+                const contents = document.createElement('p');
+                contents.textContent = hoot.content;
+
+                const date = document.createElement('small');
+                date.textContent = new Date(hoot.created);
 
                 div.appendChild(header);
-                div.appendChild(content);
+                div.appendChild(contents);
+                div.appendChild(date);
 
                 hootsElement.appendChild(div);
             });
-        })
+        });
+        loadingElement.style.display = 'none';
 }
