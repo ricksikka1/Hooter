@@ -7,4 +7,6 @@ With the following features:
 * Owls can send a hoot 🦉 ✉️
 * Owls can see all hoots that have been sent 🦉 🗂
 
-![](preview.gif)
+<p align="center">
+  <img src="preview.gif" alt="animated" />
+</p>
