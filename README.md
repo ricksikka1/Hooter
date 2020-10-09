@@ -4,5 +4,5 @@ A basic twitter clone built to demonstrate the full stack 🥞 (client, server, 
 
 With the following features:
 
-* Owls can send a hoot 🦉✉️
-* Owls can see all hoots that have been sent 🦉🗂
+* Owls can send a hoot 🦉 ✉️
+* Owls can see all hoots that have been sent 🦉 🗂
