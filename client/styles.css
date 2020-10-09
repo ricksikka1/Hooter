@@ -2,7 +2,11 @@
     text-align: center;
 }
 
-.hoot-form{
+.hoot-form, .loading{
     width: 50%;
     margin: 0 auto;
+}
+
+.loading{
+    text-align: center;
 }
