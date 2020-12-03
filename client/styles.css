@@ -3,7 +3,7 @@
 }
 
 .hoot-form, .loading{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .hoots {
-    width: 80%;
+    width: calc(100% - 20px);
     margin: 0 auto;
   }
   
@@ -21,15 +21,68 @@
     padding: 12px;
     border-radius: 4px;
 }
-  
+
+.hoots > div:nth-child(odd) {
+    background-color: #DEB887;
+}
+.hoots > div:nth-child(even) {
+    background-color: #8B4513;
+    color: white;
+}
+
 .hoots > div > h3 {
     word-wrap: break-word;
+    font: bold;
+    font-family: "Verdana", Helvetica, sans-serif;
 }
   
 .hoots > div > p {
     word-wrap: break-word;
+    font-size: 30px;
 }
-  
+
+.hoots > div > small {
+    vertical-align: top;
+}
+
 .hoots > div:not(:last-child) {
     margin-bottom: 8px;
+}
+
+.column-left {
+    float: left;
+    color: #8B4513; /* Should be removed. Only for demonstration */
+  }
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main {
+    width: 100%;
+}
+  
+.col-left {
+    width : calc(100% - 20px);
+    background-color: rgb(104, 48, 22);
+}
+
+.col-right {
+    width : calc(100% - 20px);
+    background-color: rgb(104, 48, 22);
+}
+
+.hoot-form {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form-input {
+    width: 100%;
+}
+.button-primary {
+    align-self: flex-end;
+    width: 200px;
 }

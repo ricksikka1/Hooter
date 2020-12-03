@@ -50,14 +50,14 @@ function listAllHoots(){
                 const div = document.createElement('div');
 
                 const header = document.createElement('h3');
-                header.textContent = hoot.name;
+                header.textContent = hoot.name + " the 🦉:";
 
                 const contents = document.createElement('p');
                 contents.textContent = hoot.content;
 
-                const date = document.createElement('small');
-                date.textContent = new Date(hoot.created);
-
+                var date = document.createElement('small');
+                date.textContent = new Date(hoot.created).toLocaleString();
+                                
                 div.appendChild(header);
                 div.appendChild(contents);
                 div.appendChild(date);
