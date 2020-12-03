@@ -10,3 +10,8 @@ With the following features:
 <p align="center">
   <img src="preview.gif" alt="animated" />
 </p>
+
+<p align="center">
+  <img src="Modified-FrontEnd.png" />
+</p>
+
