@@ -1,5 +1,6 @@
 .title{
     text-align: center;
+    padding: 20px 0px;
 }
 
 .hoot-form, .loading{
@@ -20,6 +21,8 @@
     background: hsl(0, 0%, 95%);
     padding: 12px;
     border-radius: 4px;
+    display:flex;
+    flex-direction: column;
 }
 
 .hoots > div:nth-child(odd) {
@@ -29,34 +32,23 @@
     background-color: #8B4513;
     color: white;
 }
-
-.hoots > div > h3 {
-    word-wrap: break-word;
-    font: bold;
-    font-family: "Verdana", Helvetica, sans-serif;
-}
   
 .hoots > div > p {
     word-wrap: break-word;
     font-size: 30px;
 }
 
-.hoots > div > small {
-    vertical-align: top;
-}
-
 .hoots > div:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.column-left {
-    float: left;
-    color: #8B4513; /* Should be removed. Only for demonstration */
-  }
+.hoots div .date {
+    align-self: flex-end;
+}
 
 .main-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .main {
@@ -65,23 +57,31 @@
   
 .col-left {
     width : calc(100% - 20px);
-    background-color: rgb(104, 48, 22);
+    background: url("wooden.jpg");
+    
 }
 
 .col-right {
     width : calc(100% - 20px);
-    background-color: rgb(104, 48, 22);
+    background: url("wooden.jpg");
 }
 
 .hoot-form {
     display:flex;
     flex-direction: column;
-    width: 90%;
+    width: 93%;
 }
 
 .form-input {
     width: 100%;
 }
+
+.hooter-title {
+    word-wrap: break-word;
+    font-weight: 700;
+    font-family: "Verdana", Helvetica, sans-serif;
+}
+
 .button-primary {
     align-self: flex-end;
     width: 200px;

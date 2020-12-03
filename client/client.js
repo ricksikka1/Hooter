@@ -51,12 +51,14 @@ function listAllHoots(){
 
                 const header = document.createElement('h3');
                 header.textContent = hoot.name + " the 🦉:";
+                header.className = "hooter-title";
 
                 const contents = document.createElement('p');
                 contents.textContent = hoot.content;
-
+                
                 var date = document.createElement('small');
                 date.textContent = new Date(hoot.created).toLocaleString();
+                date.className = "date"
                                 
                 div.appendChild(header);
                 div.appendChild(contents);
